@@ -169,8 +169,7 @@ contract JoyGotchiV2 is ERC721, Ownable {
     event PetEvolved(uint256 petId, uint256 species, uint256 evolutionPhase);
 
     constructor(
-        address _token,
-        address _qrngAirnode
+        address _token
     ) ERC721("Joy Gotchi", "Joy Gotchi") {
         token = IToken(_token);
     }
